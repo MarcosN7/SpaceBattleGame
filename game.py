@@ -48,7 +48,7 @@ last_bullet_time = pygame.time.get_ticks()
 
 #Meteors
 meteor_width, meteor_height = 50, 50
-meteor_image = pygame.image.load("meteor.png")  # Replace with your meteor image
+meteor_image = pygame.image.load("meteor.png")  
 meteor_image = pygame.transform.scale(meteor_image, (meteor_width, meteor_height))
 meteor_x = []
 meteor_y = []
@@ -63,7 +63,7 @@ for i in range(num_meteors):
 
 # Enemy aliens
 enemy_width, enemy_height = 48, 48
-enemy_image = pygame.image.load("enemy.png")  # Replace with your enemy alien image
+enemy_image = pygame.image.load("enemy.png") 
 enemy_image = pygame.transform.scale(enemy_image, (enemy_width, enemy_height))
 enemy_x = []
 enemy_y = []
@@ -101,8 +101,9 @@ pygame.mixer.music.play(-1)  # "-1" indicates infinite loop
 # Set background music volume
 pygame.mixer.music.set_volume(0.5)  # Adjust the volume level (0.0 to 1.0)
 
+#laser sound
 pygame.mixer.init()
-laser_sound = pygame.mixer.Sound("laser.mp3")  # Replace with your laser sound file
+laser_sound = pygame.mixer.Sound("laser.mp3") 
 
 # Menu variables
 menu_active = True
